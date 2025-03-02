@@ -89,7 +89,7 @@ static std::unordered_map<std::string, std::unordered_map<std::string, USBKeyDef
 
 bool DuckyInterpreter::SetKeyboardLayout(const std::string &layout)
 {
-    if (layout == "win_en_US")
+    if (layout == "win_fr")
     {
         _keyboardLayout.clear();
         return true;
