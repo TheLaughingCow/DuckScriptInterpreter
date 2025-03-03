@@ -57,6 +57,7 @@
          {"à", USBKeyDefinition(0x27)},  // 0
          {")", USBKeyDefinition(0x2d)},
          {"=", USBKeyDefinition(0x2e)},
+         {" ", USBKeyDefinition(0x2c)},
 
          // Chiffres avec Shift
          {"1", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x1e)},
