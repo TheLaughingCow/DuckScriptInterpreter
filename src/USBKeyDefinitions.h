@@ -102,7 +102,65 @@ static std::unordered_map<std::string, USBKeyDefinition> keyLookupTable = {
     {"n", USBKeyDefinition(0x11)},
     {"N", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x11)},
 
-
+    // Chiffres et symboles (sans Shift)
+    {"&", USBKeyDefinition(0x1e)},  // 1
+    {"é", USBKeyDefinition(0x1f)},  // 2
+    {"\"", USBKeyDefinition(0x20)}, // 3
+    {"'", USBKeyDefinition(0x21)},  // 4
+    {"(", USBKeyDefinition(0x22)},  // 5
+    {"-", USBKeyDefinition(0x23)},  // 6
+    {"è", USBKeyDefinition(0x24)},  // 7
+    {"_", USBKeyDefinition(0x25)},  // 8
+    {"ç", USBKeyDefinition(0x26)},  // 9
+    {"à", USBKeyDefinition(0x27)},  // 0
+    {")", USBKeyDefinition(0x2d)},
+    {"=", USBKeyDefinition(0x2e)},
+    {" ", USBKeyDefinition(0x2c)},
+    
+    // Chiffres avec Shift
+    {"1", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x1e)},
+    {"2", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x1f)},
+    {"3", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x20)},
+    {"4", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x21)},
+    {"5", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x22)},
+    {"6", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x23)},
+    {"7", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x24)},
+    {"8", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x25)},
+    {"9", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x26)},
+    {"0", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x27)},
+    
+    // Autres caractères
+    {",", USBKeyDefinition(0x36)},
+    {";", USBKeyDefinition(0x33)},
+    {":", USBKeyDefinition(0x33)},
+    {"!", USBKeyDefinition(0x38)},
+    {"ù", USBKeyDefinition(0x2f)},
+    {"*", USBKeyDefinition(0x30)},
+    {"$", USBKeyDefinition(0x21)},
+    {"^", USBKeyDefinition(0x2f)},
+    
+    // Symboles nécessitant AltGr
+    {"@", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x1f)},
+    {"#", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x20)},
+    {"{", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x21)},
+    {"[", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x22)},
+    {"|", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x23)},
+    {"`", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x24)},
+    {"\\", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x25)},
+    {"€", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x08)},
+    
+    // Autres symboles
+    {"/", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x38)},
+    {"?", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x2d)},
+    {"²", USBKeyDefinition(0x35)},
+    {"~", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x2e)},
+    {"§", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x1f)},
+    {"%", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x24)},
+    {"µ", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x10)},
+    {"\"", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x20)},
+    {"£", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::RightAlt, 0x1f)},
+    {"°", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x35)},
+    {"+", USBKeyDefinition(USBKeyDefinition::UsbHidModifiers::LeftShift, 0x2e)},
 
 static std::vector<const char *> systemKeys =
     {
