@@ -62,29 +62,7 @@ static std::unordered_map<std::string, DuckyInterpreter::DuckyScriptOperator> op
     {"%", DuckyInterpreter::DuckyScriptOperator::MOD}};
 
 static std::unordered_map<std::string, std::unordered_map<std::string, USBKeyDefinition>> langLookupTable = {
-#include "locales/win_be.h"
-#include "locales/win_ca-FR.h"
-#include "locales/win_ca.h"
-#include "locales/win_ch.h"
-#include "locales/win_cs-CZ.h"
-#include "locales/win_de-DE.h"
-#include "locales/win_da-DK.h"
-#include "locales/win_es.h"
-#include "locales/win_es-MX.h"
-#include "locales/win_fi.h"
 #include "locales/win_fr.h"
-#include "locales/win_en-GB.h"
-#include "locales/win_hr-HR.h"
-#include "locales/win_hu-HU.h"
-#include "locales/win_it.h"
-#include "locales/win_ja-JP.h"
-#include "locales/win_no.h"
-#include "locales/win_pt-BR.h"
-#include "locales/win_pt-PT.h"
-#include "locales/win_se.h"
-#include "locales/win_si.h"
-#include "locales/win_sk-SK.h"
-#include "locales/win_tr-TK.h"
 };
 
 bool DuckyInterpreter::SetKeyboardLayout(const std::string &layout)
